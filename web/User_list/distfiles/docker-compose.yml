@@ -1,0 +1,16 @@
+version: '3'
+services:
+  php:
+    build: challenge/php
+    ports:
+      - 14001:80
+    depends_on:
+      - db
+    environment:
+      DB: db
+  db:
+    build: challenge/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: y0d3n
+      MYSQL_PASSWORD: password

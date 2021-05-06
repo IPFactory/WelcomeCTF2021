@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ofd:
+    build:
+      context: .
+    working_dir: /home/pwn
+    container_name: ofd 
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+        - "4001:4001"
+    entrypoint: /etc/init.sh
+

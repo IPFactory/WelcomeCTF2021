@@ -1,0 +1,8 @@
+[
+    {
+        "name":"flag",
+        "value": "flag{xss_c4n_st34l_c00k13s}",
+        "domain": "php",
+        "path": "/"
+    }
+]

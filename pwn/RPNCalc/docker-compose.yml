@@ -1,0 +1,14 @@
+version: '3'
+services:
+  rpncalc:
+    build:
+      context: .
+    working_dir: /home/pwn
+    container_name: rpncalc 
+    ulimits:
+      nproc: 65535
+      core: 0
+    ports:
+        - "4002:4002"
+    entrypoint: /etc/init.sh
+

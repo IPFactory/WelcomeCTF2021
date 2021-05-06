@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Passwd manager</title>
+    <style>
+        {{ css }}
+    </style>
+</head>
+
+<body>
+    <h2>パスワードを保存しましょう!!</h2>
+    <form action="update" method="POST">
+        <input type="text" name="user" placeholder="Your name" value="{{ user }}">
+        <input type="text" name="passwd" placeholder="Password" value="{{ passwd }}">
+        <input type="submit" name="commit" value="Enter">
+    </form>
+    <hr>
+    <h2>CSSをカスタマイズできます！</h2>
+    <a href="?css=body{color: red;}">example</a>
+    <form>
+        <textarea name="css" cols="30" rows="10">{{ css or ''}}</textarea>
+        <input type="submit" value="Enter">
+    </form>
+    <hr>
+    <h2>自信作のCSSができたら教えてね！すぐに見に行くよ！</h2>
+    <form action="worker" method="POST">
+        <textarea name="css" cols="30" rows="10">{{ css or '' }}</textarea>
+        <input type="submit" value="Enter">
+    </form>
+</body>
+
+</html>

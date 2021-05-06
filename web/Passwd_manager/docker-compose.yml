@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  python:
+    build: challenge/python
+    ports:
+      - 14003:5000
+    environment:
+      NODE: http://node:3000/
+  node:
+    build: challenge/node
+    tty: true
+    environment:
+      PYTHON: http://python:5000/
+    command: node /app/crawler.js

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "user",
+        "value": "admin",
+        "domain": "python",
+        "path": "/"
+    },
+    {
+        "name":"passwd",
+        "value": "flag{***CENSORED***}",
+        "domain": "python",
+        "path": "/"
+    }
+]

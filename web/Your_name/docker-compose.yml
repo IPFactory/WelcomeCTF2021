@@ -1,0 +1,15 @@
+version: "3"
+services:
+  php:
+    build: challenge/php
+    working_dir: /var/www/html
+    ports:
+      - 14002:80
+    environment: 
+      NODE: http://node:3000/
+  node:
+    build: challenge/node
+    tty: true
+    command: node /app/crawler.js
+    environment: 
+      PHP: http://php/

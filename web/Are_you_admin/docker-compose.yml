@@ -1,0 +1,6 @@
+version: "3"
+services:
+  php:
+    build: challenge/php
+    ports:
+      - 14000:80
