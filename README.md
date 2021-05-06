@@ -1,3 +1,3 @@
-# Welcome CTF 2021
+# IPFactory WelcomeCTF 2021
 
-2021年度のWelcome CTF用リポジトリです
+2021/04/24に開催したIPFactory WelcomeCTF 2021のリポジトリです
